@@ -1,0 +1,42 @@
+#1631615804634 | took 3ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+select * from INFORMATION_SCHEMA.SEQUENCES
+select * from INFORMATION_SCHEMA.SEQUENCES;
+#1631615805009 | took 1ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+drop table if exists movies CASCADE 
+drop table if exists movies CASCADE ;
+#1631615805010 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+drop sequence if exists hibernate_sequence
+drop sequence if exists hibernate_sequence;
+#1631615805013 | took 1ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+#1631615805017 | took 4ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+create table movies (id bigint not null, name varchar(255), rank bigint not null, rating double not null, primary key (id))
+create table movies (id bigint not null, name varchar(255), rank bigint not null, rating double not null, primary key (id));
+#1631615805309 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+#1631615805322 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+#1631615805323 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+#1631615805335 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+insert into movies (name, rank, rating, id) values (?, ?, ?, ?)
+insert into movies (name, rank, rating, id) values ('The Shawshank Redemption', 1, 9.3, 1);
+#1631615805337 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+insert into movies (name, rank, rating, id) values (?, ?, ?, ?)
+insert into movies (name, rank, rating, id) values ('The Godfather', 2, 9.2, 2);
+#1631615805337 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+insert into movies (name, rank, rating, id) values (?, ?, ?, ?)
+insert into movies (name, rank, rating, id) values ('The Dark Knight', 3, 9.0, 3);
+#1631615805338 | took 0ms | commit | connection 0| url jdbc:p6spy:h2:mem:persistence
+
+;
+#1631615807586 | took 0ms | statement | connection 0| url jdbc:p6spy:h2:mem:persistence
+select movie0_.id as id1_0_, movie0_.name as name2_0_, movie0_.rank as rank3_0_, movie0_.rating as rating4_0_ from movies movie0_
+select movie0_.id as id1_0_, movie0_.name as name2_0_, movie0_.rank as rank3_0_, movie0_.rating as rating4_0_ from movies movie0_;
+#1631615807593 | took 0ms | commit | connection 0| url jdbc:p6spy:h2:mem:persistence
+
+;
